@@ -24,3 +24,13 @@ const genre = "SF";
 const category = "영화";
 
 console.log(genre + " " + category);
+
+// 5. 영화 정보를 문자열로 조합하기
+console.log("영화 제목: " + title);
+console.log("평점: " + voteAverage);
+console.log("개봉일: " + releaseDate);
+
+// 6. Template Literal 사용하기
+console.log(`영화 제목: ${title}`);
+console.log(`평점: ${voteAverage}`);
+console.log(`개봉일: ${releaseDate}`);
