@@ -13,3 +13,14 @@ console.log(voteCount);
 console.log(popularity);
 console.log(releaseDate);
 console.log(originalLanguage);
+
+// 3. Number 데이터 연산하기
+const additionalVoteCount = 100;
+
+console.log(voteCount + additionalVoteCount);
+
+// 4. String 데이터 연산하기
+const genre = "SF";
+const category = "영화";
+
+console.log(genre + " " + category);
