@@ -58,3 +58,20 @@ console.log(movies[0].title); // 첫 번째 영화의 제목
 console.log(movies[1].voteAverage); // 두 번째 영화의 평점
 console.log(movies[2].releaseDate); // 세 번째 영화의 개봉일
 console.log(movies.length); // 전체 영화의 개수
+
+// 7. 영화 데이터 수정하고 추가하기
+// 7-1) 첫 번째 영화의 평점 수정하기
+movies[0].voteAverage = 8.5;
+
+console.log(movies[0].voteAverage);
+
+// 7-2) 새로운 영화 추가하기
+const newMovie = {
+  id: 4,
+  title: "다크 나이트",
+  voteAverage: 9.0,
+  releaseDate: "2008-07-16",
+};
+movies.push(newMovie);
+
+console.log(movies.length);
