@@ -27,3 +27,6 @@ const secondMovie = document.createElement("div");
 secondMovie.textContent = secondMessage;
 secondMovie.classList.add("border", "rounded", "p-3", "mb-2");
 movieList.append(secondMovie);
+
+// 7. 요소 삭제해보기
+// secondMovie.remove();
