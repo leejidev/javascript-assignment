@@ -13,3 +13,17 @@ title.textContent = "오늘의 추천 영화";
 // 4. 설명 영역 강조하기
 const description = document.querySelector(".description");
 description.classList.add("text-primary", "fw-bold");
+
+// 5. 함수의 반환값을 화면에 표시하기
+const movieList = document.querySelector("#movie-list");
+const movie = document.createElement("div");
+movie.textContent = message;
+movie.classList.add("border", "rounded", "p-3", "mb-2");
+movieList.append(movie);
+
+// 6. 영화 하나 더 추가하기
+const secondMessage = getMovieMessage("인터스텔라", 8.7);
+const secondMovie = document.createElement("div");
+secondMovie.textContent = secondMessage;
+secondMovie.classList.add("border", "rounded", "p-3", "mb-2");
+movieList.append(secondMovie);
