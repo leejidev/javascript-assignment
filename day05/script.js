@@ -40,3 +40,10 @@ searchForm.addEventListener("submit", (event) => {
   const normalizedSearchTerm = searchInput.value.trim().toLowerCase();
   searchResult.textContent = normalizedSearchTerm;
 });
+
+// 5. 어떤 배열 메서드를 사용할지 구분하기
+/** 다음 기능을 구현할 때 find(), filter(), map() 중 어떤 메서드가 적절한지 README.md 파일에 답변 작성
+ * A. 제목이 "인터스텔라"인 영화 하나 찾기
+ * B. 평점이 8점 이상인 영화 모두 찾기
+ * C. 모든 영화에서 제목만 가져오기
+ */
