@@ -28,3 +28,12 @@ console.log(highRatedMovies);
 // 3. map()으로 영화 제목만 가져오기
 const movieTitles = movies.map((movie) => movie.title);
 console.log(movieTitles);
+
+// 4. 검색어 가공하기
+const searchForm = document.querySelector("#search-form");
+const searchInput = document.querySelector("#search-input");
+const searchResult = document.querySelector("#search-result");
+
+searchForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+});
