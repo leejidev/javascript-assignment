@@ -36,4 +36,7 @@ const searchResult = document.querySelector("#search-result");
 
 searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
+
+  const normalizedSearchTerm = searchInput.value.trim().toLowerCase();
+  searchResult.textContent = normalizedSearchTerm;
 });
