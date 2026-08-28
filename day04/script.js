@@ -43,7 +43,7 @@ const movies = [
   },
 ];
 movies.forEach((movie) => {
-  console.log(`${movie.title}의 평점은 ${movie.voteAverage}입니다.`);
+  // console.log(`${movie.title}의 평점은 ${movie.voteAverage}입니다.`);
 });
 
 // 6. 영화 목록을 화면에 출력하기
