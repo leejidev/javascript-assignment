@@ -64,7 +64,14 @@ async function getTopRatedMovies() {
   container.textContent = "";
 
   // TODO 9. data.results를 renderMovies()에 전달하세요.
-  renderMovies(data.results);
+  console.log(data.results);
+  // renderMovies(data.results);
+
+  // 평점 9점 이상 영화만 표시하기
+  const filteredMovies = data.results.filter(
+    (movie) => movie.vote_average >= 9,
+  );
+  renderMovies(filteredMovies);
 }
 
 getTopRatedMovies();
