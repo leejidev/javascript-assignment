@@ -116,7 +116,8 @@ async function searchTVShows(keyword) {
       return;
     }
 
-    // TODO 심화 01.
+    // TODO 심화 01. 검색 결과 개수 표시하기
+    resultInfo.textContent = `검색 결과 ${data.results.length}건`;
 
     // TODO 6.검색 결과 화면에 표시하기
     renderTVShows(data.results);
