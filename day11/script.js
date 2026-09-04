@@ -83,7 +83,12 @@ form.addEventListener("submit", (event) => {
   // TODO 1. 빈 검색어 처리하기
   if (!keyword) return;
 
-  // TODO 심화 02.
+  // TODO 심화 02.너무 짧은 검색어 요청 막기
+  if (keyword.length < 2) {
+    container.textContent = "검색어를 2글자 이상 입력해 주세요.";
+    return;
+  }
+
   searchTVShows(keyword);
 });
 
