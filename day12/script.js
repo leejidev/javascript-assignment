@@ -30,6 +30,10 @@ function renderKeywords() {
     keywordButton.textContent = keyword;
 
     // TODO 심화 01. 최근 검색어를 클릭하여 다시 검색하기
+    keywordButton.addEventListener("click", () => {
+      input.value = keyword;
+      searchMovies(keyword);
+    });
 
     const removeButton = document.createElement("button");
 
@@ -158,5 +162,10 @@ async function getNowPlayingMovies() {
 renderKeywords();
 
 // TODO 심화 02. 최근 검색어 전체 삭제하기
+clearButton.addEventListener("click", () => {
+  keywords = [];
+  localStorage.setItem("keywords", JSON.stringify(keywords));
+  renderKeywords();
+});
 
 getNowPlayingMovies();
